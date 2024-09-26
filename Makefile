@@ -1,6 +1,6 @@
 MCU = atmega32
 FREQ = 16000000UL
-FILE = blink
+FILE = m32
 APN = m32
 
 default:
