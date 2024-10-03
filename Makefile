@@ -15,6 +15,5 @@ read:
 	avrdude -F -V -c usbasp -p $(APN) -P usb -U flash:r:$(FILE)_dump.bin:r -vvv
 	avr-objcopy -v -O ihex -R .eeprom $(FILE)_dump.bin $(FILE)_dump.hex
 	
-
 erase:
 	avrdude -F -V -c usbasp -p $(APN) -B 10 -P usb -e -vvv
